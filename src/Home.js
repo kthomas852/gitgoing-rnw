@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Text, Button, StyleSheet, View, TextInput } from 'react-native';
+import {Link} from 'react-router-dom';
 import AntiClippyHalf from './AntiClippyHalf'
 import {Animated} from 'react-animated-css';
 import fire from './db/fire';
@@ -44,7 +45,7 @@ export default class InputBox extends Component {
                     autoCapitalize = "none"
                 />
       </View> 
-      <View>
+      <View style={styles.stdBTN}>
         <Button 
             title= "LogIn"
             full
@@ -54,7 +55,7 @@ export default class InputBox extends Component {
             color= "#FF6D70"
         />
         </View>
-        <View>
+        <View style={styles.stdBTN}>
         <Button 
             title= "SignUp"
             full
@@ -66,11 +67,11 @@ export default class InputBox extends Component {
       </View>
       </form>
         </View>  
-           <Button 
-           //onPress = {goToGitInit}
+        <Link to = {'/GitInit'} >
+           <Button
            title= "GitGoing to Git Init"
            color='#FF6D70'
-           />  
+           /></Link>
         <Text style={styles.p}>Would you like to learn more?</Text>
         </View>
        
@@ -106,7 +107,7 @@ export default class InputBox extends Component {
      borderRadius: '100%',
      borderColor: '#4A4843',
      borderWidth: 25,
-     marginTop: '25%',
+     marginTop: '1%',
      
    },
    //brown box
@@ -134,7 +135,7 @@ export default class InputBox extends Component {
      borderColor: 'black',
      backgroundColor: '#FFF',
      borderRadius: 20,
-     width: '50%',
+     width: '120%',
      height: '5%',
      marginTop: '5%',
      alignItems: 'center',   
@@ -148,7 +149,7 @@ export default class InputBox extends Component {
      borderColor: 'black',
      backgroundColor: '#FFF',
      borderRadius: 20,
-     width: '50%',
+     width: '120%',
      height: '5%',
      marginTop: '1%',
      marginBottom: '1%',
@@ -159,5 +160,7 @@ export default class InputBox extends Component {
       color: 'white',
    },
   
-  
+   stdBTN: {
+      margin: '3%'
+   }
    });

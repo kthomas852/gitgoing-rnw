@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Nav from './Nav';
 import Home from './Home';
 import GitInit from './GitInit';
 import GitClone from './GitClone';
@@ -17,43 +18,7 @@ class App extends Component{
         return(
             <Router>
                 <div>
-                <nav>
-                    <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/GitInit/">GitInit</Link>
-                    </li>
-                    <li>
-                        <Link to="/GitClone/">GitClone</Link>
-                    </li>
-                    <li>
-                        <Link to="/GitStatus/">GitStatus</Link>
-                    </li>
-                    <li>
-                        <Link to="/GitPull/">GitPull</Link>
-                    </li>
-                    <li>
-                        <Link to="/GitAdd/">GitAdd</Link>
-                    </li>
-                    <li>
-                        <Link to="/GitStash/">GitStash</Link>
-                    </li>
-                    <li>
-                        <Link to="/GitCommit/">GitCommit</Link>
-                    </li>
-                    <li>
-                        <Link to="/GitReset/">GitReset</Link>
-                    </li>
-                    <li>
-                        <Link to="/GitPush/">GitPush</Link>
-                    </li>
-                    <li>
-                        <Link to="/GitQuestion/">GotQuestions</Link>
-                    </li>
-                    </ul>
-                </nav>
+                <Nav/>
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/GitInit/" component={GitInit} />

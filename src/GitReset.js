@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, Button, StyleSheet, View } from 'react-native';
+import {Link} from 'react-router-dom';
 import AntiClippyL from './AntiClippyL'
 import {Animated} from 'react-animated-css';
 
@@ -16,11 +17,11 @@ const GitReset = () => {
       
        </View>
        </View>
+         <Link to={'/GitPush'}>
           <Button 
-          //onPress = {goToPush}
           title= "GitGoing to Git Push"
           color='#FF6D70'
-          />
+          /></Link>
        </View>
           
           

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, Button, StyleSheet, View } from 'react-native';
+import {Link} from 'react-router-dom';
 import AntiClippyL from './AntiClippyL'
 import {Animated} from 'react-animated-css';
 
@@ -15,11 +16,11 @@ const GitClone = () => {
       
        </View>
        </View>
+         <Link to={'/GitStatus'}>
           <Button 
-          //onPress = {goToStatus}
           title= "GitGoing to Git Status"
           color='#FF6D70'
-          />
+          /></Link>
        </View>
           
        

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, Button, StyleSheet, View } from 'react-native';
+import {Link} from 'react-router-dom';
 import AntiClippyL from './AntiClippyL'
 import {Animated} from 'react-animated-css';
 
@@ -14,11 +15,11 @@ return(
      
       </View>
       </View>
+        <Link to={'/GitStash'}>
          <Button 
-         //onPress = {goToStash}
          title= "GitGoing to Git Stash"
          color='#FF6D70'
-         />
+         /></Link>
       </View>
 )
 }
