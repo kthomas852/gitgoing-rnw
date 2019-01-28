@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, Button, StyleSheet, View } from 'react-native';
+import {Link} from 'react-router-dom';
 import AntiClippy from './AntiClippy'
 import {Animated} from 'react-animated-css';
 
@@ -15,11 +16,11 @@ const GitCommit = () => {
       
        </View>
        </View>
+         <Link to={'/GitReset'}>
           <Button 
-          //onPress = {goToReset}
           title= "GitGoing to Git Reset"
           color='#FF6D70'
-          />
+          /></Link>
        </View>
           
         

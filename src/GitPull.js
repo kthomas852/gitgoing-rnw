@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, Button, StyleSheet, View } from 'react-native';
+import {Link} from 'react-router-dom';
 import AntiClippyL from './AntiClippyL'
 import {Animated} from 'react-animated-css';
 
@@ -15,11 +16,11 @@ const GitPull = () => {
       
        </View>
        </View>
+         <Link to={'/GitAdd'}>
           <Button 
-          //onPress = {goToAdd}
           title= "GitGoing to Git Add"
           color='#FF6D70'
-          />
+          /></Link>
        </View>
          
           

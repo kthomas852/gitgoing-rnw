@@ -1,5 +1,6 @@
 import React, {Component, Form} from 'react';
 import { Text, Button, StyleSheet, View, TextInput } from 'react-native';
+import {Link} from 'react-router-dom';
 import AntiClippy from './AntiClippy'
 import {Animated} from 'react-animated-css';
 import { askClip } from './QA/anticlipQA';
@@ -37,16 +38,20 @@ export default class InputBox extends Component {
             value={this.state.question} 
             autoCorrect = {false}
             ></TextInput>
+            <View style={styles.stdBTN}>
              <Button 
              onPress = {() => this.setState({return: askClip(this.state.question), question: ''})}
              title= "Ask Anti-Clippy"
              color='#FF6D70'
              />
+             </View>
+             <View style={styles.stdBTN}>
+             <Link to={'/GitInit'}>
              <Button 
-             //onPress = {goToHome}
+             style={styles.stdBTN}
              title= "GitGoing Back Home"
              color='#FF6D70'
-             />
+             /></Link></View>
           </form>
           </View>
              
@@ -62,20 +67,20 @@ export default class InputBox extends Component {
           alignItems: "center",      
         },
         
-       title: {
-          color: '#FF6D70',
-        fontWeight: 'bold',
-        justifyContent: 'center',
-        
-        flexDirection: 'column',
-        fontSize: '5%',
-        textShadowColor: 'rgba(0, 0, 0, 0.75)',
-        textShadowOffset: {width: -1, height: 1},
-        textShadowRadius: 10,
-        marginTop: 0,
-        paddingTop: '5%',
-        
-       },
+        title: {
+         color: '#FF6D70',
+         fontWeight: 'bold',
+         justifyContent: 'center',
+         alignItems: 'center',
+         flexDirection: 'column',
+         fontSize: 60,
+         textShadowColor: 'rgba(0, 0, 0, 0.75)',
+         textShadowOffset: {width: -1, height: 1},
+         textShadowRadius: 10,
+         marginTop: '1%',
+         paddingTop: '3%',
+         
+        },
        //white circle
       circle1: {
        backgroundColor: '#fff',
@@ -127,12 +132,15 @@ export default class InputBox extends Component {
        justifyContent:'center',
        backgroundColor: '#FFF',
        borderRadius: 20,
-       width: '60%',
+       width: '120%',
        height: '5%',
        marginTop: '3%',
           
        
      },
     
+     stdBTN: {
+      margin: '3%'
+      }
     
      });
