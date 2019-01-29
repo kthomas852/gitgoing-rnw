@@ -17,7 +17,6 @@ const GitStatus = () => {
        </View>
          <Link to={'/GitPull'}>
           <Button 
-          //onPress = {goToPull}
           title= "GitGoing to Git Pull"
           color='#FF6D70'
           /></Link>

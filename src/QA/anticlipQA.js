@@ -17,6 +17,17 @@ export const askClip = (question, ignore) => {
         break;
       }else{
         switch(qArray[i]){
+          case "penis":
+          case "pussy":
+          case "titties":
+              return "Don't be a child, ask a real question!"
+          case "butt":
+          case "ass":
+          case "fart":
+          case "farts":
+              return "What, do you think this is an episode of Beavis and Butthead?!"
+          case "clippy":
+              return "Clippy was my FATHER, you will address me as Anthony... but I prefer Crush";
           case "new":
           case "make":
           case "create":
@@ -32,7 +43,7 @@ export const askClip = (question, ignore) => {
                 case "version":
                     return "Create New Branch: git checkout -b 'name of branch'" ;
                 default:
-                    return 'Not understanding, make sure your grammer is correct and try again...';
+                    return "I'd answer that question only to be Ironic... Ask another way";
           };
             //get data for match
           case "change":
@@ -81,5 +92,5 @@ export const askClip = (question, ignore) => {
         }
       }
     }
-    return "Looks like we could not find what you were looking for. Please try again.";
+    return "This question is beyond the realm of my interest, please be more interesting...";
   }
