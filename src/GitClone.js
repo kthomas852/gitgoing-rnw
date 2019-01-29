@@ -8,7 +8,7 @@ const GitClone = () => {
     return (
        <View style={styles.container}>
        <View style={styles.brownBox}>
-       <Animated animationOnMount="zoomInDown"><Text style={styles.title}>Git Clone</Text></Animated>
+       <Text style={styles.title}>Git Clone</Text>
        <View style={styles.circle1}>
        <AntiClippyL style={styles.AntiClippy}/> 
        <Text style={styles.p}>This is how you copy a repo (repository) you or someone else created to your computer. Type <Text style={{ fontWeight: 'bold' }}>git clone </Text> then paste the link from GitHub and watch the magic!</Text>
@@ -33,21 +33,21 @@ const GitClone = () => {
        backgroundColor: '#4A4843',
        alignItems: "center",      
      },
-     
-    title: {
-       color: '#FF6D70',
-     fontWeight: 'bold',
-     justifyContent: 'center',
-     alignItems: 'center',
-     flexDirection: 'column',
-     fontSize: '7%',
-     textShadowColor: 'rgba(0, 0, 0, 0.75)',
-     textShadowOffset: {width: -1, height: 1},
-     textShadowRadius: 10,
-     marginTop: '15%',
-     paddingTop: '8%',
-     
-    },
+      
+     title: {
+      color: '#FF6D70',
+      fontWeight: 'bold',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'column',
+      fontSize: 60,
+      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+      textShadowOffset: {width: -1, height: 1},
+      textShadowRadius: 10,
+      marginTop: '1%',
+      paddingTop: '3%',
+      
+     },
     //white circle
    circle1: {
     backgroundColor: '#fff',
@@ -65,15 +65,15 @@ const GitClone = () => {
   },
   //brown box
   brownBox: {
-    backgroundColor: '#A79B82',
-    width: '90%',
-    height: '70%',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 120,
-    marginTop: '2%',
-    paddingBottom: '1%',
-  },
+   backgroundColor: '#A79B82',
+   width: '100%',
+   height: '70%',
+   alignItems: 'center',
+   justifyContent: 'center',
+   borderRadius: 220,
+   marginTop: '2%',
+   paddingBottom: '3%',
+ },
  
  //logo
   AntiClippy: {

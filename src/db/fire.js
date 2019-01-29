@@ -40,7 +40,7 @@ signUpUser: (email, password) => {
     try{
       firebase.auth().signInWithEmailAndPassword(email, password).then(function (user){
         console.log(user);
-        window.open('/GitInit');
+        window.location.replace('/GitInit');
       })
     }
     catch(err){

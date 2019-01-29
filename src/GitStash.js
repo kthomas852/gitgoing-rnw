@@ -35,19 +35,19 @@ const GitStash = () => {
      
     
      title: {
-       color: '#FF6D70',
-     fontWeight: 'bold',
-     justifyContent: 'center',
-     alignItems: 'center',
-     flexDirection: 'column',
-     fontSize: '5%',
-     textShadowColor: 'rgba(0, 0, 0, 0.75)',
-     textShadowOffset: {width: -1, height: 1},
-     textShadowRadius: 10,
-     marginTop: 0,
-     paddingTop: '8%',
-     
-    },
+      color: '#FF6D70',
+      fontWeight: 'bold',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'column',
+      fontSize: 60,
+      textShadowColor: 'rgba(0, 0, 0, 0.75)',
+      textShadowOffset: {width: -1, height: 1},
+      textShadowRadius: 10,
+      marginTop: '1%',
+      paddingTop: '3%',
+      
+     },
     //white circle
    circle1: {
     backgroundColor: '#fff',
