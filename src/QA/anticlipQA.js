@@ -33,7 +33,6 @@ export const askClip = (question, ignore) => {
           case "create":
             if(qArray[i+1] === 'new'){
               i++
-            }
               switch(qArray[(i+1)]){
                 case "repository":
                 case "repo":
@@ -44,7 +43,7 @@ export const askClip = (question, ignore) => {
                     return "Create New Branch: git checkout -b 'name of branch'" ;
                 default:
                     return "I'd answer that question only to be Ironic... Ask another way";
-          };
+          };};
             //get data for match
           case "change":
           case "switch":
@@ -56,7 +55,6 @@ export const askClip = (question, ignore) => {
           case "destroy":
           if(qArray[i+1] === 'new'){
             i++
-          }
             switch(qArray[(i+1)]){
               case "repository":
               case "repo":
@@ -67,7 +65,7 @@ export const askClip = (question, ignore) => {
                   return "Delete Branch: git branch -d 'branch name'" ;
               default:
                   return "Not catching your drift buddy, please try again...";
-          }
+          }}
             //get data for match
             //break;
           case "reset":
