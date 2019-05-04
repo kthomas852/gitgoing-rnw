@@ -59,8 +59,6 @@ const styles = StyleSheet.create({
       borderWidth: 15,
       marginTop: '3%',
       flexDirection: 'row',
-      alignItems: 'center',
-      
     },
   //brown box
   brownBox: {

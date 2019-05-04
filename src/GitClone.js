@@ -59,9 +59,7 @@ const GitClone = () => {
     borderColor: '#4A4843',
     borderWidth: 15,
     marginTop: '3%',
-    flexDirection: 'row',
-    alignItems: 'center',
-    
+    flexDirection: 'row'
   },
   //brown box
   brownBox: {
