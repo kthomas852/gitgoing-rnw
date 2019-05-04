@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Image } from 'react-native'
+import React from 'react'
+// import { Image } from 'react-native'
 
 const AntiClippyL = () => (
    //<Image source = {require('./assets/antiClippyL.png')} />

@@ -1,4 +1,4 @@
-import React, {Component, Form} from 'react';
+import React, {Component} from 'react';
 import { Text, Button, StyleSheet, View, TextInput } from 'react-native';
 import {Link} from 'react-router-dom';
 import AntiClippy from './AntiClippy'
