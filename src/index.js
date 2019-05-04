@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
 import {AppRegistry} from 'react-native-web';
 import App from './App';
 //import './index.css'

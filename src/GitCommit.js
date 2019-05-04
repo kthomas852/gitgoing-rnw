@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, Button, StyleSheet, View } from 'react-native';
 import {Link} from 'react-router-dom';
 import AntiClippy from './AntiClippy'
-import {Animated} from 'react-animated-css';
+// import {Animated} from 'react-animated-css';
 
 const GitCommit = () => {
     return (
